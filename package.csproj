@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageId>ODumpling.Web.Templates</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>ODumpling</Authors>
+        <Title>ODumpling Templates</Title>
+        <Description>Inertia Js Template for react.</Description>
+        <PackageTags>dotnet; Inertiajs; React;</PackageTags>
+        <PackageProjectUrl>https://github.com/ODumpling/InertiaTemplate.git</PackageProjectUrl>
+        
+        <PackageType>Template</PackageType>
+        <TargetFramework>net8.0</TargetFramework>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\node_modules\**" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
+    
+</Project>

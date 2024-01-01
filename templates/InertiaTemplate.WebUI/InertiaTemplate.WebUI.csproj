@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <SpaRoot>frontend\</SpaRoot>
+    <AssemblyName>InertiaTemplate.WebUI</AssemblyName>
+    <RootNamespace>InertiaTemplate.WebUI</RootNamespace>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
   
   <ItemGroup>
