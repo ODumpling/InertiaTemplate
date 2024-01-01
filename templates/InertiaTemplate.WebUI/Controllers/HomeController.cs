@@ -1,7 +1,7 @@
 using InertiaCore;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebUI.Controllers;
+namespace InertiaTemplate.WebUI.Controllers;
 
 public class HomeController : Controller
 {
