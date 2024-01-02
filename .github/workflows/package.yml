@@ -2,11 +2,8 @@
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    tags:
+      - '*' # Push events to matching tags
 
 jobs:
   build:
