@@ -29,8 +29,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Pack solution
-        run: dotnet pack package.csproj --no-restore --no-build
+        run: dotnet pack package.csproj -o nupkgs
 
-      - name: Publish
-        if: startsWith(github.ref, 'refs/heads/release')
-        run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}} -SkipDuplicate
+      - name: Publish to NuGet
+        run: nuget push nupkgs\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}} -SkipDuplicate
