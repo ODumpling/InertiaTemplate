@@ -1,9 +1,6 @@
 ﻿name: Package
 
 on:
-  create:
-    branches:
-      - release/**
   push:
     branches:
       - main
