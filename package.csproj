@@ -9,7 +9,7 @@
         <Description>Inertia Js Template for react.</Description>
         <PackageTags>dotnet; Inertiajs; React;</PackageTags>
         <PackageProjectUrl>https://github.com/ODumpling/InertiaTemplate.git</PackageProjectUrl>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageReadmeFile>content/templates/InertiaTemplate.WebUI/README.md</PackageReadmeFile>
         <PackageType>Template</PackageType>
         <TargetFramework>net8.0</TargetFramework>
         <IncludeContentInPack>true</IncludeContentInPack>
