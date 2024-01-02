@@ -14,10 +14,6 @@ on:
 jobs:
   build:
 
-    env:
-      BUILD_CONFIG: 'Release'
-      SOLUTION: 'MySolution.sln'
-
     runs-on: ubuntu-latest
 
     steps:
